@@ -1,8 +1,25 @@
 .nav {
 	list-style: none;
-	text-decoration: none;
 	text-align: center;
+}
+
+a {
 	font-family: IBM Plex Mono;
 	font-weight: 400;
 	color: var(--textColorSecondary);
+	text-decoration: none;
+	padding: 12px;
+	border-radius: 32px;
+	box-sizing: border-box;
+}
+
+a:hover {
+	background-color: var(--navHoverBackground);
+	color: var(--textColorPrimary);
+}
+
+.activeNavItem {
+	background-color: var(--navActiveBackground);
+	color: var(--textColorPrimary);
+	font-weight: var(--textSemibold);
 }
