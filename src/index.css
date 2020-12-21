@@ -2,7 +2,7 @@
 	--backgroundPrimary: #1e1e1e;
 	--textColorPrimary: #ffffff;
 	--textColorSecondary: rgba(255, 255, 255, 0.5);
-	--textSemibold: 600
+	--textSemibold: 600;
 	--navWidth: 156px;
 	--navHoverBackground: rgba(255, 255, 255, 0.04);
 	--navActiveBackground: rgba(255, 255, 255, 0.08);
