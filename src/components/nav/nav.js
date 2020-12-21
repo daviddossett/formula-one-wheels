@@ -1,10 +1,13 @@
 import React from 'react';
 import './nav.css';
+import logo from '../../images/logo.svg';
 
 export function Nav({ className }) {
 	return (
 		<nav className={`${className} nav`}>
-			<li>Logo</li>
+			<li>
+				<img src={logo} alt="Formula 1 logo" />
+			</li>
 			<li>1950</li>
 			<li>1960</li>
 			<li>1970</li>
