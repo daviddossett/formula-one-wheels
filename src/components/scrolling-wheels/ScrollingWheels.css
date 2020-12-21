@@ -1,0 +1,16 @@
+.content {
+	overflow-y: auto;
+	padding: 32px;
+}
+
+.homeImage {
+	width: 100%;
+	background-color: var(--navHoverBackground);
+	height: 1000px;
+}
+
+.image1950 {
+	width: 100%;
+	background-color: var(--navHoverBackground);
+	height: 1000px;
+}
