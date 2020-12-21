@@ -3,14 +3,23 @@
 	padding: 32px;
 }
 
-.homeImage {
-	width: 100%;
-	background-color: var(--navHoverBackground);
+section {
 	height: 1000px;
+	width: 100%;
 }
 
-.image1950 {
-	width: 100%;
-	background-color: var(--navHoverBackground);
-	height: 1000px;
+.home {
+	background-color: palegoldenrod;
+}
+
+.wheel1950 {
+	background-color: palegreen;
+}
+
+.wheel1960 {
+	background-color: paleturquoise;
+}
+
+.wheel1970 {
+	background-color: palevioletred;
 }

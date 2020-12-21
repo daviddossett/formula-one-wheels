@@ -1,9 +1,9 @@
 import React from 'react';
-import './nav.css';
+import './Nav.css';
 import logo from '../../images/logo.svg';
 import { HashLink, NavHashLink } from 'react-router-hash-link';
 
-export function StyledNavItem({ children, to }) {
+function StyledNavItem({ children, to }) {
 	return (
 		<NavHashLink smooth to={to} exact={true} activeClassName={'activeNavItem'}>
 			{children}
@@ -14,9 +14,9 @@ export function StyledNavItem({ children, to }) {
 export function Nav({ className }) {
 	return (
 		<nav className={`${className} nav`}>
-			<HashLink smooth to={'#home'}>
+			<a href={'/'}>
 				<img src={logo} alt="Logo" />
-			</HashLink>
+			</a>
 			<StyledNavItem to={'#1950'}>1950</StyledNavItem>
 			<StyledNavItem to={'#1960'}>1960</StyledNavItem>
 			<StyledNavItem to={'#1970'}>1970</StyledNavItem>

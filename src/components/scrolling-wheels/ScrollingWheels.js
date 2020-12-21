@@ -1,19 +1,27 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import './ScrollingWheels.css';
 
 export function ScrollingWheels() {
 	return (
 		<div className={'content'}>
-			<section id="home">
-				<h1>Home</h1>
-				<p>Some content</p>
-				<div className={'homeImage'} />
-			</section>
-			<section id="1950">
-				<h2>1950</h2>
-				<p>Some content</p>
-				<div className={'image1950'} />
-			</section>
+			<Switch>
+				<Route path="/" exact>
+					<section id="top" className={'home'}>
+						<h1>Home</h1>
+					</section>
+					<section id="1950" className={'wheel1950'}>
+						<h2>1950</h2>
+					</section>
+					<section id="1960" className={'wheel1960'}>
+						<h2>1960</h2>
+					</section>
+					<section id="1970" className={'wheel1970'}>
+						<h2>1970</h2>
+					</section>
+				</Route>
+				<Route>404</Route>
+			</Switch>
 		</div>
 	);
 }
