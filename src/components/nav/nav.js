@@ -1,21 +1,22 @@
 import React from 'react';
 import './nav.css';
 import logo from '../../images/logo.svg';
+import { NavLink } from 'react-router-dom';
 
 export function Nav({ className }) {
 	return (
 		<nav className={`${className} nav`}>
-			<li>
+			<NavLink to="/">
 				<img src={logo} alt="Formula 1 logo" />
-			</li>
-			<li>1950</li>
-			<li>1960</li>
-			<li>1970</li>
-			<li>1980</li>
-			<li>1990</li>
-			<li>2000</li>
-			<li>2010</li>
-			<li>2020</li>
+			</NavLink>
+			<NavLink to="/1950">1950</NavLink>
+			<NavLink to="/1960">1960</NavLink>
+			<NavLink to="/1970">1970</NavLink>
+			<NavLink to="/1980">1980</NavLink>
+			<NavLink to="/1990">1990</NavLink>
+			<NavLink to="/2000">2000</NavLink>
+			<NavLink to="/2010">2010</NavLink>
+			<NavLink to="/2020">2020</NavLink>
 		</nav>
 	);
 }
