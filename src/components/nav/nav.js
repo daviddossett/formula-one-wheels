@@ -1,7 +1,7 @@
 import React from 'react';
 import './Nav.css';
 import logo from '../../images/logo.svg';
-import { HashLink, NavHashLink } from 'react-router-hash-link';
+import { NavHashLink } from 'react-router-hash-link';
 
 function StyledNavItem({ children, to }) {
 	return (
