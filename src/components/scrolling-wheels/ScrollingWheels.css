@@ -1,25 +1,8 @@
 .content {
 	overflow-y: auto;
-	padding: 32px;
 }
 
 section {
-	height: 1000px;
+	height: 1500px;
 	width: 100%;
-}
-
-.home {
-	background-color: palegoldenrod;
-}
-
-.wheel1950 {
-	background-color: palegreen;
-}
-
-.wheel1960 {
-	background-color: paleturquoise;
-}
-
-.wheel1970 {
-	background-color: palevioletred;
 }

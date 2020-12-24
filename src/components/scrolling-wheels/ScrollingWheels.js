@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, useHistory } from 'react-router-dom';
 import './ScrollingWheels.css';
 
-export function ScrollingWheels() {
+export function ScrollingWheels({ getCurrentSection }) {
+	const history = useHistory();
+
 	useEffect(() => {
 		const sections = document.querySelectorAll('section');
 		const containerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
@@ -20,9 +22,10 @@ export function ScrollingWheels() {
 		});
 
 		function intersectionHandler(entry) {
-			console.log(entry.target.id);
+			getCurrentSection(entry.target.id);
+			history.replace(`#${entry.target.id}`);
 		}
-	});
+	}, [getCurrentSection, history]);
 
 	return (
 		<div className={'content'}>
@@ -40,8 +43,20 @@ export function ScrollingWheels() {
 					<section id="1970" className={'wheel1970'}>
 						<h2>1970</h2>
 					</section>
-					<section id="1970" className={'wheel1970'}>
-						<h2>1970</h2>
+					<section id="1980" className={'wheel1980'}>
+						<h2>1980</h2>
+					</section>
+					<section id="1990" className={'wheel1990'}>
+						<h2>1990</h2>
+					</section>
+					<section id="2000" className={'wheel2000'}>
+						<h2>2000</h2>
+					</section>
+					<section id="2010" className={'wheel2010'}>
+						<h2>2010</h2>
+					</section>
+					<section id="2020" className={'wheel2020'}>
+						<h2>2020</h2>
 					</section>
 				</Route>
 				<Route>404</Route>
