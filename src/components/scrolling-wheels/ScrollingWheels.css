@@ -1,8 +1,38 @@
-.content {
-	overflow-y: auto;
+section {
+	width: 100%;
 }
 
-section {
-	height: 1500px;
-	width: 100%;
+.content {
+	overflow-y: auto;
+	padding: 96px 32px;
+}
+
+.about {
+	display: grid;
+	justify-items: center;
+	grid-row-gap: 48px;
+}
+
+.icon-placeholder {
+	height: 48px;
+	width: 48px;
+	background-color: #6d78dc;
+	border-radius: 4px;
+}
+
+.hero-header,
+.hero-description {
+	max-width: 800px;
+	margin: 0;
+}
+
+.hero-header {
+	font-size: 72px;
+	line-height: 80px;
+	font-family: 'Inter';
+	text-align: center;
+}
+
+.hero-description {
+	text-align: center;
 }

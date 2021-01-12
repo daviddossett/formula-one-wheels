@@ -31,33 +31,14 @@ export function ScrollingWheels({ getCurrentSection }) {
 		<div className={'content'}>
 			<Switch>
 				<Route path="/" exact>
-					<section id="top" className={'home'}>
-						<h1>Home</h1>
+					<section id="top" className={'about'}>
+						<div className={'icon-placeholder'} />
+						<h1 className={'hero-header'}>Steering Wheels of Formula One</h1>
+						<p className={'hero-description'}>A brief overview of the most exciting wheels ever</p>
 					</section>
-					<section id="1950" className={'wheel1950'}>
+					{/* <section id="1950" className={'wheel1950'}>
 						<h2>1950</h2>
-					</section>
-					<section id="1960" className={'wheel1960'}>
-						<h2>1960</h2>
-					</section>
-					<section id="1970" className={'wheel1970'}>
-						<h2>1970</h2>
-					</section>
-					<section id="1980" className={'wheel1980'}>
-						<h2>1980</h2>
-					</section>
-					<section id="1990" className={'wheel1990'}>
-						<h2>1990</h2>
-					</section>
-					<section id="2000" className={'wheel2000'}>
-						<h2>2000</h2>
-					</section>
-					<section id="2010" className={'wheel2010'}>
-						<h2>2010</h2>
-					</section>
-					<section id="2020" className={'wheel2020'}>
-						<h2>2020</h2>
-					</section>
+					</section> */}
 				</Route>
 				<Route>404</Route>
 			</Switch>

@@ -1,5 +1,5 @@
 :root {
-	--backgroundPrimary: #1e1e1e;
+	--backgroundPrimary: #171717;
 	--textColorPrimary: #ffffff;
 	--textColorSecondary: rgba(255, 255, 255, 0.5);
 	--textSemibold: 600;
@@ -14,9 +14,8 @@ body {
 	letter-spacing: 0.3px;
 	font-size: 1rem;
 	margin: 0;
-	font-family: IBM Plex Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-		'Helvetica Neue', sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+		'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	height: 100vh;
@@ -27,11 +26,16 @@ body {
 }
 
 h1 {
-	font-family: IBM Plex Mono, -apple-system, sans-serif;
+	font-family: -apple-system, sans-serif;
 	letter-spacing: -0.6px;
 }
 
+p {
+	font-size: 1em;
+	letter-spacing: 0.5px;
+	opacity: 60%;
+}
+
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
