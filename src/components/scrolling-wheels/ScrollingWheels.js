@@ -35,6 +35,7 @@ export function ScrollingWheels({ getCurrentSection }) {
 						<div className={'icon-placeholder'} />
 						<h1 className={'hero-header'}>Steering Wheels of Formula One</h1>
 						<p className={'hero-description'}>A brief overview of the most exciting wheels ever</p>
+						<div className={'image-placeholder'} />
 					</section>
 					{/* <section id="1950" className={'wheel1950'}>
 						<h2>1950</h2>

@@ -36,3 +36,11 @@ section {
 .hero-description {
 	text-align: center;
 }
+
+.image-placeholder {
+	background-color: white;
+	opacity: 5%;
+	width: 100%;
+	height: 800px;
+	border-radius: 4px;
+}
